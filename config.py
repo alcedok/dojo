@@ -1,3 +1,8 @@
+# modules used for easier display of data
+from IPython.display import display
+from IPython.core.display import HTML
+display(HTML("<style>.container { width:100% !important; }</style>"))
+
 # these are variables that will be constant for this kata
 
 #  52Hz
