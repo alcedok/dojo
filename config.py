@@ -3,9 +3,14 @@ from IPython.display import display
 from IPython.core.display import HTML
 display(HTML("<style>.container { width:100% !important; }</style>"))
 
-# these are variables that will be constant for this kata
+## Data location
+import os
+curr_dir = os.getcwd()
+data_dir = os.path.join(curr_dir,'..',"data/")
 
-#  52Hz
+## These are variables that will be constant for this kata
+
+# Hz
 sampling_freq = 52.0 
 
 # number of participants
@@ -23,3 +28,5 @@ labels_list =['Working at Computer','Standing Up,Walking and Going up/down stair
               'Talking while Standing']
 
 labels_dict = {n+1:i for n,i in enumerate(labels_list)}
+
+
