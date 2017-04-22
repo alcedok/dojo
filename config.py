@@ -1,8 +1,3 @@
-# modules used for easier display of data
-from IPython.display import display
-from IPython.core.display import HTML
-display(HTML("<style>.container { width:100% !important; }</style>"))
-
 ## Data location
 import os
 curr_dir = os.getcwd()
